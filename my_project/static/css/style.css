@@ -58,7 +58,7 @@ p {
 
 h1:hover,
 p:hover {
-  background: linear-gradient(135deg, #8b00ff, #0000ff);
+  background: transparent;
   transition: all 0.5s;
   scale: 1.6;
   margin: 20px;
