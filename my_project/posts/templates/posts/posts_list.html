@@ -1,8 +1,13 @@
 {% extends 'layout.html'%} {%block title%} Posts {%endblock%} {%block content%}
 <h1 class="h1">Posts Screen</h1>
-{% for post in posts %}
-<article>
-  <h2>title: {{post.title}}</h2>
-  <p>body: {{post.body}}</p>
-</article>
-{% endfor %} {%endblock%}
+<section>
+  {% for post in posts %}
+  <article>
+    <p>title: {{post.title}}</p>
+    <p>body: {{post.body}}</p>
+    <p>date: {{post.date}}</p>
+  </article>
+  {% endfor %}
+</section>
+
+{%endblock%}
