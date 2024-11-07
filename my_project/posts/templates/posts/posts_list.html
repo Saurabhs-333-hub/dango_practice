@@ -3,7 +3,11 @@
 <section>
   {% for post in posts %}
   <article>
-    <p>title: {{post.title}}</p>
+    <p>
+      <a href="{% url 'posts:details' slug=post.slug %}"
+        >title: {{post.title}}</a
+      >
+    </p>
     <p>body: {{post.body}}</p>
     <p>date: {{post.date}}</p>
   </article>
